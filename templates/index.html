@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesoframe</title>
+</head>
+<body>
+    <h1>Get HTTP Info :-)  </h1>
+    <form method="POST">
+        <label for="url">Enter URL:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Fetch</button>
+    </form>
+
+    {% if headers %}
+    <h2>Response content:</h2>
+    <pre>{{ headers }}</pre>
+    <h2>HTML Content:</h2>
+    <pre>{{ body }}</pre>
+    {% endif %}
+
+<a href="#">about</a>
+<a href="#">Our Service</a>
+</body>
+</html>
+
